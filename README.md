@@ -1,6 +1,8 @@
 # Image to Excel Converter
 <img width="1920" height="1072" alt="home" src="https://github.com/user-attachments/assets/2d36fca0-1ab4-4805-8998-6cd3aa089014" />
-This web application allows users to upload an image of a handwritten table/ledger and convert it into an Excel file. Requires user's own Gemini API key.  
+This web application allows users to upload an image of a handwritten table/ledger and convert it into an Excel file. Requires user's own Gemini API key.
+
+## MORE CONSISTENT THAN OCR BASED SOLUTION. USES GEMINI'S LATEST 2.5 FLASH MODEL. COMPATIBLE WITH DIFFERENT TYPES OF HANDWRITING BUT TRY TO KEEP IT CLEAN AND HAVE PROPER DEFINED ROWS AND COLUMNS
 
 ## Features
 
