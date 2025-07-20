@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works - Image to Excel Converter</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="about.css"> </head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="/" class="logo-link"><img src="logo.png" alt="Logo" class="logo"></a>
+            <div class="nav-links">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/about" class="nav-link">About</a>
+                <a href="/how-it-works" class="nav-link">How it Works</a>
+                <a href="https://github.com/Mriganka-Codes" target="_blank" rel="noopener noreferrer" class="nav-link">GitHub</a>
+            </div>
+            <button class="hamburger" id="hamburger">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>How It Works</h1>
+        <p>This tool simplifies the process of extracting tabular data from images and converting it into an Excel spreadsheet. Here is the step-by-step process:</p>
+        
+        <ol style="text-align: left; display: inline-block; margin-top: 20px;">
+            <li><strong>Upload Image:</strong> You start by uploading an image file (JPG or PNG) containing a data table.</li>
+            <li><strong>Data Extraction:</strong> The backend, powered by the Google Gemini API, analyzes the image to identify and extract the table data.</li>
+            <li><strong>Excel File Generation:</strong> The extracted data is converted into an Excel (.xlsx) file format.</li>
+            <li><strong>Download:</strong> Click on the download link to save it.</li>
+        </ol>
+
+        <h2 style="margin-top: 30px;">Tips for Best Results</h2>
+        <p>To ensure the highest accuracy, please follow these guidelines when preparing your image:</p>
+        
+        <ul style="text-align: left; display: inline-block; margin-top: 20px; list-style-position: inside;">
+            <li><strong>Use Clear Images:</strong> Ensure your photo is sharp, well-lit, and not blurry. A direct, top-down capture works best.</li>
+            <li><strong>Legible Handwriting:</strong> If your data is handwritten, please ensure it is as neat and clear as possible.</li>
+            <li><strong>Proper Table Structure:</strong> The image should contain a clear table with well-defined rows and columns.</li>
+            <li><strong>Unambiguous Data Placement:</strong> Make sure each piece of data sits clearly within its intended row and column.</li>
+            <li><strong>File Format:</strong> Please use only <strong>JPG</strong> or <strong>PNG</strong> image formats.</li>
+        </ul>
+
+        <a href="/" class="try-now-btn">Try it now!</a>
+    </div>
+</body>
+</html>
