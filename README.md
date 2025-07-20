@@ -1,6 +1,6 @@
 # Image to Excel Converter
 
-This web application allows users to upload an image of a data table and convert it into a downloadable Excel file.
+This web application allows users to upload an image of a handwritten table/ledger and convert it into an Excel file. Requires user's own Gemini API key.  
 
 ## Features
 
@@ -19,6 +19,7 @@ This web application allows users to upload an image of a data table and convert
     - `pandas`: For data manipulation and Excel file creation.
     - `Pillow`: For image processing.
     - `python-dotenv`: For managing environment variables.
+<img width="1920" height="1072" alt="home" src="https://github.com/user-attachments/assets/2d36fca0-1ab4-4805-8998-6cd3aa089014" />
 
 ## Setup and Installation
 
