@@ -1,5 +1,5 @@
 # Image to Excel Converter
-
+<img width="1920" height="1072" alt="home" src="https://github.com/user-attachments/assets/2d36fca0-1ab4-4805-8998-6cd3aa089014" />
 This web application allows users to upload an image of a handwritten table/ledger and convert it into an Excel file. Requires user's own Gemini API key.  
 
 ## Features
@@ -19,7 +19,9 @@ This web application allows users to upload an image of a handwritten table/ledg
     - `pandas`: For data manipulation and Excel file creation.
     - `Pillow`: For image processing.
     - `python-dotenv`: For managing environment variables.
-<img width="1920" height="1072" alt="home" src="https://github.com/user-attachments/assets/2d36fca0-1ab4-4805-8998-6cd3aa089014" />
+## EXAMPLES
+<img width="1240" height="760" alt="image" src="https://github.com/user-attachments/assets/665dd94f-2292-4bb3-bfea-4e13a9754891" />
+
 
 ## Setup and Installation
 
@@ -56,10 +58,15 @@ This web application allows users to upload an image of a handwritten table/ledg
 6.  **Access the application:**
     Open your web browser and go to `http://127.0.0.1:5000`.
 
-## How It Works
+## 📜 License  
+© 2025 Mriganka Baishya. All rights reserved.
 
-1.  **Upload Image:** The user uploads an image containing a table.
-2.  **API Request:** The frontend sends the image to the Flask backend.
-3.  **Gemini API:** The backend sends the image to the Google Gemini API for data extraction.
-4.  **JSON to Excel:** The structured JSON response from the API is converted into a pandas DataFrame and then saved as an Excel file.
-5.  **Download:** The server sends the Excel file back to the user for download.
+This repository and its contents are protected by copyright law and international treaties.
+Unless otherwise stated, no part of this codebase may be copied, reproduced, distributed, modified, or used in any form without the prior written consent of the copyright holder.
+
+❌ Unauthorized use is strictly prohibited and may result in legal action.
+
+This project is provided for educational and reference purposes only.
+Commercial or non-commercial reuse, redistribution, or derivation is not permitted under any circumstances.
+
+If you wish to request permission to use this code, please contact the author directly.
