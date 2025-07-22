@@ -22,7 +22,9 @@ This web application allows users to upload an image of a handwritten table/ledg
     - `Pillow`: For image processing.
     - `python-dotenv`: For managing environment variables.
 ## EXAMPLES
-<img width="1240" height="760" alt="image" src="https://github.com/user-attachments/assets/665dd94f-2292-4bb3-bfea-4e13a9754891" />
+<img width="885" height="512" alt="image" src="https://github.com/user-attachments/assets/c4e430de-7f2f-494d-9341-fc1cc97bdbe7" />
+
+
 
 
 ## Setup and Installation
