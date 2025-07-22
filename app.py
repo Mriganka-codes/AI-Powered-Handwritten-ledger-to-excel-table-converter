@@ -42,7 +42,7 @@ def how_it_works():
 
 @app.route('/api/convert', methods=['POST'])
 def convert_image_to_excel():
-    # --- 1. Robust Input Validation ---
+
     if 'image' not in request.files:
         return jsonify({"error": "No image part in the request"}), 400
     
@@ -54,11 +54,11 @@ def convert_image_to_excel():
     if not allowed_file(image_file.filename):
         return jsonify({"error": f"Invalid file type. Please use {', '.join(ALLOWED_EXTENSIONS)}."}), 400
         
-    # Check file size by checking the content length of the request
+
     if request.content_length > MAX_FILE_SIZE_BYTES:
         return jsonify({"error": f"File is too large. Maximum size is {MAX_FILE_SIZE_MB} MB."}), 413
 
-    # --- 2. Secure and Error-Proof Image Loading ---
+
     try:
         image = Image.open(image_file.stream)
     except IOError:
@@ -69,8 +69,9 @@ def convert_image_to_excel():
     Extract all the information from the table. Your output must be a valid JSON object.
     The JSON object should contain a single key called "records". The value should be an array of objects, where each object represents a row from the table.
     Use the table's column headers as the keys for each object.
+    Extract all values from the image exactly as they appear. Do not convert, interpret, or restructure these values into pounds, shillings, or pence or anything else. Simply capture the text exactly as written, including slashes and dashes.
     Ensure that any values that are numbers are formatted as numbers, not strings.
-
+    Ignore any entries that are crossed out or have strikethrough text. Do not include those rows or values in the output.
     Do not include any text or explanations outside of the JSON output.
     """
 
@@ -86,7 +87,6 @@ def convert_image_to_excel():
         data = json.loads(json_str)
         df = pd.DataFrame(data['records'])
 
-        # --- 3. Efficient In-Memory File Handling ---
         # Create a virtual file in memory
         output_io = io.BytesIO()
         df.to_excel(output_io, index=False, engine='openpyxl')
